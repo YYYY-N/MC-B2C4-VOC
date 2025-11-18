@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生詞練習活動中心</title>
+    <style>
+        body {
+            font-family: "微軟正黑體", sans-serif;
+            background-color: #fdf2e9; /* 溫暖的背景色 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        h1 {
+            color: #d35400;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p {
+            color: #7f8c8d;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .menu-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-decoration: none; /* 去除超連結底線 */
+            color: #333;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            align-items: center;
+            border-left: 6px solid #ccc;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        /* 為不同活動設定不同顏色 */
+        .card-1 { border-left-color: #3498db; } /* 藍 */
+        .card-2 { border-left-color: #e74c3c; } /* 紅 */
+        .card-3 { border-left-color: #f1c40f; } /* 黃 */
+        .card-4 { border-left-color: #2ecc71; } /* 綠 */
+        .card-5 { border-left-color: #9b59b6; } /* 紫 */
+
+        .icon {
+            font-size: 2.5em;
+            margin-right: 20px;
+        }
+
+        .info h2 {
+            margin: 0 0 5px 0;
+            font-size: 1.2em;
+        }
+
+        .info span {
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🏫 生詞練習活動中心</h1>
+    <p>請選擇一個活動開始練習</p>
+
+    <div class="menu-container">
+        
+        <a href="index_flashcard.html" class="menu-card card-1">
+            <div class="icon">🎴</div>
+            <div class="info">
+                <h2>翻轉單字卡</h2>
+                <span>Flashcards</span>
+            </div>
+        </a>
+
+        <a href="memory_game.html" class="menu-card card-2">
+            <div class="icon">🧠</div>
+            <div class="info">
+                <h2>記憶配對遊戲</h2>
+                <span>Memory Match</span>
+            </div>
+        </a>
+
+        <a href="listening_game.html" class="menu-card card-3">
+            <div class="icon">👂</div>
+            <div class="info">
+                <h2>聽音辨位</h2>
+                <span>Listening Challenge</span>
+            </div>
+        </a>
+
+        <a href="word_search.html" class="menu-card card-4">
+            <div class="icon">🔍</div>
+            <div class="info">
+                <h2>字謎搜尋</h2>
+                <span>Word Search</span>
+            </div>
+        </a>
+
+        <a href="crossword_pinyin.html" class="menu-card card-5">
+            <div class="icon">✍️</div>
+            <div class="info">
+                <h2>拼音填字</h2>
+                <span>Crossword Puzzle</span>
+            </div>
+        </a>
+
+        <a href="speaking_coach.html" class="menu-card card-1">
+            <div class="icon">🗣️</div>
+            <div class="info">
+                <h2>AI 口說教練</h2>
+                <span>Speaking Coach</span>
+            </div>
+        </a>
+
+    </div>
+
+</body>
+</html>
